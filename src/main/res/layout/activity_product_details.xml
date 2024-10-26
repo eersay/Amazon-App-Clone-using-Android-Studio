@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerInside" />
+
+        <!-- Product Title -->
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Ratings -->
+        <TextView
+            android:id="@+id/productRatingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐⭐⭐⭐⭐ 5,470 ratings"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingTop="4dp" />
+
+        <!-- Pricing Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/productPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/productDiscountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-39% off"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/productMrpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M.R.P.: $100.00"
+            android:textColor="@android:color/darker_gray"
+            android:paddingTop="4dp" />
+
+        <!-- EMI Options -->
+        <TextView
+            android:id="@+id/emiOptionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$10.00/month (12 months) with EMI"
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp" />
+
+        <!-- Color and Size Options -->
+        <TextView
+            android:id="@+id/colorSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colour: Black  |  Size: Medium"
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp" />
+
+        <!-- Delivery Options -->
+        <TextView
+            android:id="@+id/deliveryOptionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery: Free delivery on orders over $50"
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp" />
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/productDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Description: This is a detailed description of the product that provides insights about its features and specifications."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp" />
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FB8C00"
+            android:text="Add to Cart"
+            android:layout_marginTop="24dp" />
+
+        <!-- Additional Offer or Exchange Offer Section -->
+        <TextView
+            android:id="@+id/exchangeOfferTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exchange Your Old Product\nSave up to $200"
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp" />
+
+        <!-- Wishlist Button -->
+        <Button
+            android:id="@+id/wishlistButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Wishlist"
+            android:backgroundTint="#FB8C00"
+            android:layout_marginTop="8dp" />
+
+        <!-- Similar Products Section -->
+        <TextView
+            android:id="@+id/similarProductsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Similar Products"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/relatedItemsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp"
+            tools:listitem="@layout/item_related_product" />
+
+        <!-- Dummy Comment Section -->
+        <TextView
+            android:id="@+id/commentsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Reviews"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp"
+            tools:listitem="@layout/item_comment" />
+
+        <!-- Add Comment Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <EditText
+                android:id="@+id/commentInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Write a comment"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/postCommentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Define the solid fill color for the circle -->
+    <solid android:color="#FFFFFF" /> <!-- Replace with your desired color -->
+
+    <!-- Define the size of the circle (optional, can be adjusted based on your view) -->
+    <size
+        android:width="100dp"
+        android:height="100dp" /> <!-- You can adjust the size as needed -->
+
+    <!-- Optional: Define the stroke (border) for the circle -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" /> <!-- Replace with your desired stroke color -->
+
+</shape>
