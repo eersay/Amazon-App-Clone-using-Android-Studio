@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # Amazon Clone
 
 An Android application replicating essential features of an e-commerce platform. This application allows users to browse products, view details, manage a shopping cart, and interact through product comments.
@@ -107,15 +106,18 @@ Singleton object for managing the cart contents, including methods for adding, r
 ## Screenshots
 
 ### Home Screen
-![Home Screen](./screenshots/home_screen.png)
+![Home Screen](./ACSS/Mainpage.png)
+![Home Screen](./ACSS/Productss.png)
 
 ### Product Details Screen
-_Add screenshot here_
+![Product Details](./ACSS/Product%20details.png)
+![Product Details](./ACSS/Products%20details.png)
 
 ### Cart Screen
-_Add screenshot here_
+![Cart](./ACSS/Cart.png)
 
 ### Profile Screen
-_Add screenshot here_
+![Profile](./ACSS/Account.png)
 
-EOF
+### Search Screen
+![Search](./ACSS/Search.png)
